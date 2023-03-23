@@ -4,4 +4,16 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
   modules: ["@nuxt/content"],
+  css: ["@/assets/css/main.css"],
+  build: {
+    // @ts-ignore
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 });
