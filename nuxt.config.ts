@@ -3,5 +3,5 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 });
