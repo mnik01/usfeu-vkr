@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-fit w-screen overflow-hidden">
     <ContentNavigation v-slot="{ navigation }">
       <ul>
         <li v-for="link of navigation" :key="link._path">

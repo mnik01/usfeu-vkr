@@ -1,7 +1,5 @@
 <template>
-  <header></header>
-  <main>
+  <main class="h-screen bg-blue-200">
     <ContentDoc />
   </main>
-  <footer></footer>
 </template>
