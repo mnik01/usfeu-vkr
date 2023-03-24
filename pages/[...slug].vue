@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <main class="h-screen bg-blue-200">
+  <main>
     <ContentDoc />
   </main>
   <Footer />
