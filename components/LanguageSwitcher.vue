@@ -4,7 +4,7 @@
       class="w-9 flex dark:hover:bg-stone-700 bg-white items-center justify-center rounded-md"
       :class="[
         isOpened
-          ? 'dark:bg-stone-700 shadow-md py-2 absolute'
+          ? 'dark:bg-stone-700 z-10 shadow-lg py-2 absolute'
           : 'h-9 dark:bg-transparent',
       ]"
       ref="target"
@@ -17,7 +17,7 @@
         alt="kazakh language"
       />
       <ul :class="[isOpened ? 'flex flex-col gap-2' : '']" v-if="isOpened">
-        <li v-for="t in translations">
+        <li v-for="t in translations" :key="t.url">
           <a :href="t.url">
             <img class="w-[25px] h-[15px]" :src="t.imgUrl" :alt="t.alt" />
           </a>
