@@ -6,12 +6,32 @@
     <a href="/">
       <img class="w-64" src="https://usfeu.ru/static/logo.png" alt="logo" />
     </a>
+    <div class="w-full hidden md:block">
+      <nav class="w-full">
+        <ul class="flex py-2 px-6 flex-wrap gap-2 text-xs">
+          <li v-for="l in links" :key="l.title">
+            <a
+              class="p-2 rounded border hover:bg-green-100 first-letter:capitalize block"
+              :href="l.href"
+              >{{ l.title }}</a
+            >
+          </li>
+          <li v-for="l in additionalLinks" :key="l.title">
+            <a
+              class="p-2 rounded border hover:bg-green-100 first-letter:capitalize block"
+              :href="l.href"
+              >{{ l.title }}</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="w-full flex px-6 justify-end gap-2">
       <ThemeSwitcher />
       <LanguageSwitcher />
       <button
         @click="isMenuExpanded = !isMenuExpanded"
-        class="p-2 rounded-full dark:hover:bg-brand hover:bg-green-100 text-slate-700 dark:text-white transition-colors"
+        class="md:hidden p-2 rounded-full dark:hover:bg-brand hover:bg-green-100 text-slate-700 dark:text-white transition-colors"
       >
         <svg
           v-if="!isMenuExpanded"
@@ -49,17 +69,19 @@
       v-if="isMenuExpanded"
       class="absolute px-6 -translate-y-[1px] -bottom-[325%] dark:bg-stone-800 bg-white w-full shadow-md pb-6"
     >
-      <ul class="flex flex-col gap-3 text-sm">
-        <li
-          class="w-full hover:bg-green-100 transition-colors dark:bg-stone-700 dark:hover:bg-green-800 bg-stone-100 rounded-md"
-          v-for="link of links"
-          :key="link.title"
-        >
-          <a class="block p-2 first-letter:capitalize" :href="link.href">
-            {{ link.title }}
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li
+            class="w-full hover:bg-green-100 transition-colors dark:bg-stone-700 dark:hover:bg-green-800 bg-stone-100 rounded-md"
+            v-for="link of links"
+            :key="link.title"
+          >
+            <a class="block p-2 first-letter:capitalize" :href="link.href">
+              {{ link.title }}
+            </a>
+          </li>
+        </ul>
+      </nav>
       <hr class="my-4" />
       <ul class="flex flex-col gap-3 text-sm">
         <li
@@ -72,13 +94,6 @@
           </a>
         </li>
       </ul>
-      <!-- <ContentNavigation v-slot="{ navigation }">
-        <ul>
-          <li v-for="link of navigation" :key="link._path">
-            <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
-          </li>
-        </ul>
-      </ContentNavigation> -->
     </div>
   </header>
 </template>
