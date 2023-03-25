@@ -1,8 +1,8 @@
 <template>
   <div class="w-full dark:bg-stone-700 bg-stone-100">
     <div class="containered">
-      <h1 class="first-letter:capitalize pt-6 text-3xl">
-        кафедра интеллектуальных систем (ИС)
+      <h1 class="first-letter:capitalize pb-2 pt-6 text-3xl">
+        {{ data?.title || "Кафедра интеллектуальных систем (ИС)" }}
       </h1>
       <nav>
         <ol
@@ -68,7 +68,10 @@
 
 <script lang="ts" setup>
 const route = useRoute();
-
+const { path } = useRoute();
+const { data } = await useAsyncData(`content-${path}`, () => {
+  return queryContent().where({ _path: path }).only(["title"]).findOne();
+});
 const slugs = ref(
   typeof route.params.slug === "string"
     ? [route.params.slug]
