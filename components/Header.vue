@@ -11,14 +11,14 @@
         <ul class="flex py-2 px-6 flex-wrap gap-2 text-xs">
           <li v-for="l in links" :key="l.title">
             <a
-              class="p-2 rounded border hover:bg-green-100 first-letter:capitalize block"
+              class="p-2 rounded border transition-colors dark:hover:bg-stone-700 hover:bg-green-100 first-letter:capitalize block"
               :href="l.href"
               >{{ l.title }}</a
             >
           </li>
           <li v-for="l in additionalLinks" :key="l.title">
             <a
-              class="p-2 rounded border hover:bg-green-100 first-letter:capitalize block"
+              class="p-2 rounded border transition-colors dark:hover:bg-stone-700 hover:bg-green-100 first-letter:capitalize block"
               :href="l.href"
               >{{ l.title }}</a
             >
