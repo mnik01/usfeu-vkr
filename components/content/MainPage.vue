@@ -1,10 +1,17 @@
 <template>
-  <div>
-    <ol>
-      <li v-for="link in links">
-        <a :href="link.url">{{ link.title }}</a>
-      </li>
-    </ol>
+  <div class="containered flex flex-wrap gap-6 pt-6">
+    <article class="text-sm md:max-w-[25%] w-full">
+      <ol class="border divide-y">
+        <li v-for="link in links">
+          <a
+            class="px-5 hover:bg-green-50 dark:bg-stone-800 dark:hover:bg-stone-600 py-3 block w-full text-xs"
+            :href="link.url"
+            >{{ link.title }}</a
+          >
+        </li>
+      </ol>
+    </article>
+    <article class="grow md:max-w-[75%]">info</article>
   </div>
 </template>
 
