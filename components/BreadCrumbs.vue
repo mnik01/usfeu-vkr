@@ -48,7 +48,7 @@
           <li>
             <a
               href="/"
-              class="dark:text-green-700 text-stone-500 before:pr-1 before:content-['/']"
+              class="dark:text-green-700 font-heading text-stone-500 before:pr-1 before:content-['/']"
               >Кафедра интеллектуальных систем (ИС)</a
             >
           </li>

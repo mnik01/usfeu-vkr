@@ -13,6 +13,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: '"Montserrat", sans-serif',
+        paragraph: '"Open Sans", sans-serif',
+      },
       colors: {
         brand: "#29B657",
       },
