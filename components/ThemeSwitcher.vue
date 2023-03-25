@@ -1,7 +1,7 @@
 <template>
   <button
     @click="toggleTheme"
-    class="p-2 rounded-full dark:hover:bg-[#29B657] hover:bg-green-100 text-slate-700 dark:text-white transition-colors"
+    class="p-2 rounded-full dark:hover:bg-brand hover:bg-green-100 text-slate-700 dark:text-white transition-colors"
   >
     <svg
       v-if="isDarkMode"

@@ -11,5 +11,12 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        brand: "#29B657",
+      },
+    },
+  },
   plugins: [require("@tailwindcss/forms")],
 };
