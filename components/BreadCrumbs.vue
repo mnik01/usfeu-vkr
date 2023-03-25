@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full dark:bg-stone-700 bg-stone-200">
+  <div class="w-full dark:bg-stone-700 bg-stone-100">
     <div class="containered">
-      <h1 class="first-letter:capitalize pt-4 text-3xl">
+      <h1 class="first-letter:capitalize pt-6 text-3xl">
         кафедра интеллектуальных систем (ИС)
       </h1>
       <nav>
         <ol
-          class="flex mt-2 items-center gap-1 pb-4 text-xs dark:text-green-600 text-[#19472A] flex-wrap"
+          class="flex mt-2 items-center gap-1 pb-6 text-xs dark:text-green-600 text-[#19472A] flex-wrap"
         >
           <li>
             <a href="https://usfeu.ru/">

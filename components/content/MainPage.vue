@@ -16,24 +16,27 @@
     <article
       class="grow pt-4 md:pt-0 md:px-6 flex flex-col gap-2 md:max-w-[75%]"
     >
-      <div class="flex gap-4 h-fit">
+      <div class="flex flex-wrap gap-4 h-fit">
         <div class="sr-only">personal info</div>
-        <a class="w-fit block" href="mailto:pobedinskiyvv@m.usfeu.ru">
+        <a
+          class="md:w-fit w-full flex justify-center md:block"
+          href="mailto:pobedinskiyvv@m.usfeu.ru"
+        >
           <img
             class="min-w-[183px] h-[250px]"
             src="https://usfeu.ru/media/filer_public_thumbnails/filer_public/3b/30/3b308f24-8369-40b5-8e25-971829bca3be/pobedinskii_vv.jpg__404x250.0_q85_subsampling-2.jpg"
             alt="Фото профессора Побединского"
           />
         </a>
-        <div class="w-fit h-fit">
-          <span class="block font-bold">Побединский Владимир Викторович</span>
-          <span class="block text-stone-600 text-sm">Заведующий кафедрой</span>
-          <span class="block text-stone-600 text-sm"
-            >Профессор, кандидат технических наук, доктор технических наук
-          </span>
+        <div class="sm:text-left text-center sm:w-[unset] w-full">
+          <p class="font-bold">Побединский Владимир Викторович</p>
+          <p class="text-stone-600 text-sm">Заведующий кафедрой</p>
+          <p class="text-stone-600 text-sm">
+            Профессор, кандидат технических наук, доктор технических наук
+          </p>
         </div>
       </div>
-      <div class="sm:grid-cols-2 sm:grid flex flex-wrap mt-4 gap-3 text-sm">
+      <div class="sm:grid-cols-2 max-sm:mb-8 grid mt-4 gap-3 text-sm">
         <p class="font-semibold">E-mail заведующего кафедрой:</p>
         <a
           href="mailto:pobedinskiyvv@m.usfeu.ru"
