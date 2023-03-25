@@ -6,9 +6,9 @@
     <a href="/">
       <img class="w-64" src="https://usfeu.ru/static/logo.png" alt="logo" />
     </a>
-    <div class="w-full hidden md:block">
+    <div class="w-full mt-4 hidden md:block">
       <nav class="w-full">
-        <ul class="flex py-2 px-6 flex-wrap gap-2 text-xs">
+        <ul class="flex py-2 containered flex-wrap gap-2 text-xs">
           <li v-for="l in links" :key="l.title">
             <a
               class="p-2 rounded border transition-colors dark:hover:bg-stone-700 hover:bg-green-100 first-letter:capitalize block"
@@ -26,7 +26,7 @@
         </ul>
       </nav>
     </div>
-    <div class="w-full flex px-6 justify-end gap-2">
+    <div class="w-full flex containered justify-end gap-2">
       <ThemeSwitcher />
       <LanguageSwitcher />
       <button
