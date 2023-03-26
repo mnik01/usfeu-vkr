@@ -41,7 +41,7 @@
                 <li v-for="item in navigation.contacts" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2"
+                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2 dark:text-stone-300"
                     >{{ item.name }}</a
                   >
                 </li>
@@ -56,7 +56,7 @@
                 <li v-for="item in navigation.comission" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2"
+                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2 dark:text-stone-300"
                     >{{ item.name }}</a
                   >
                 </li>
@@ -73,7 +73,7 @@
                 <li v-for="item in navigation.feedback" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2"
+                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2 dark:text-stone-300"
                     >{{ item.name }}</a
                   >
                 </li>
@@ -86,7 +86,7 @@
                 <li v-for="item in navigation.menu" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2"
+                    class="text-xs leading-6 text-stone-700 hover:text-brand hover:underline before:content-['-'] before:pr-2 dark:text-stone-300"
                     >{{ item.name }}</a
                   >
                 </li>
