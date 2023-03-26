@@ -8,6 +8,8 @@
       >
         <img
           class="min-w-[183px] h-[250px]"
+          width="183"
+          height="250"
           src="https://usfeu.ru/media/filer_public_thumbnails/filer_public/3b/30/3b308f24-8369-40b5-8e25-971829bca3be/pobedinskii_vv.jpg__404x250.0_q85_subsampling-2.jpg"
           alt="Фото профессора Побединского"
         />

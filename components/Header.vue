@@ -4,7 +4,13 @@
     :class="{ 'shadow-lg': !isMenuExpanded }"
   >
     <a href="/">
-      <img class="w-64" src="https://usfeu.ru/static/logo.png" alt="logo" />
+      <img
+        width="256"
+        height="71.54"
+        class="w-64"
+        src="https://usfeu.ru/static/logo.png"
+        alt="logo"
+      />
     </a>
     <div class="w-full mt-4 hidden md:block">
       <nav class="w-full">

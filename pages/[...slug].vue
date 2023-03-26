@@ -23,9 +23,7 @@ p {
 </style>
 
 <script setup lang="ts">
-useHead({
-  meta: [
-    { name: "og:image", content: "https://i.postimg.cc/tCdFm62D/image.png" },
-  ],
+useSeoMeta({
+  ogImage: "https://i.postimg.cc/tCdFm62D/image.png",
 });
 </script>
