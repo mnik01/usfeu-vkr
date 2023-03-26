@@ -21,3 +21,11 @@ p {
   margin-bottom: 16px;
 }
 </style>
+
+<script setup lang="ts">
+useHead({
+  meta: [
+    { name: "og:image", content: "https://i.postimg.cc/tCdFm62D/image.png" },
+  ],
+});
+</script>
